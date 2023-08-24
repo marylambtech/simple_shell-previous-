@@ -1,16 +1,18 @@
 #include "shell.h"
-/**
-* main - main
-* @argc: Argument 1
-* @argv: Argument 2
-* @env: environment variable
-*
-* Return: always 0
-*/
 
-int main(int argc, char **argv, char **env)
+/**
+ * main - Entry point of the shell program
+ * @argc: Number of command-line arguments
+ * @argv: Array of command-line argument strings
+ * @env: Array of environment variable strings
+ *
+ * Return: Always 0
+ */
+int main(int argc, char *argv[], char **env)
 {
-	if (argc == 1)
-		prompt(av, env);
-	return (0);
+	(void)argc;
+
+	prompt(argv, env);
+
+	return (0);
 }

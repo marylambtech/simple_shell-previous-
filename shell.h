@@ -6,5 +6,6 @@
 #include <unistd.h>
 
 int sum(int n1, int n2);
+void prompt(char *argv[], char **env);
 
 #endif
